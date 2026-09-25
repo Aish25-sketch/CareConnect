@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f3;
+    color: #303a32;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 16px 8%;
+    background: white;
+    border-bottom: 1px solid #dce2dc;
+}
+
+.brand {
+    color: #426b52;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    padding-top: 3px;
+}
+
+nav a {
+    margin-left: 18px;
+    color: #46534a;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #426b52;
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 55px 20px;
+    background: #e5eee5;
+    text-align: center;
+}
+
+.hero h1 {
+    max-width: 650px;
+    margin: 0 auto 12px;
+    color: #304c39;
+    font-size: 36px;
+}
+
+.hero p {
+    max-width: 570px;
+    margin: 0 auto 22px;
+    color: #56645a;
+}
+
+.eyebrow {
+    margin: 0 0 5px;
+    color: #55775d;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #426b52;
+    border-radius: 4px;
+    background: #426b52;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #34563f;
+}
+
+.button.secondary {
+    background: white;
+    color: #426b52;
+}
+
+.section,
+.dashboard {
+    max-width: 720px;
+    margin: 38px auto;
+    padding: 0 20px;
+}
+
+.section h2,
+.dashboard h1 {
+    margin: 0 0 8px;
+    color: #304c39;
+}
+
+.section > p:not(.eyebrow),
+.dashboard-text {
+    margin-top: 0;
+    color: #657168;
+}
+
+form,
+.chat-box,
+.dashboard-card,
+.dashboard-info {
+    padding: 20px;
+    border: 1px solid #dce2dc;
+    border-radius: 5px;
+    background: white;
+}
+
+label {
+    display: block;
+    margin: 13px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd3cb;
+    border-radius: 4px;
+    background: white;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #b7cbb8;
+}
+
+form button {
+    margin-top: 16px;
+}
+
+.response {
+    min-height: 24px;
+    color: #426b52;
+    font-weight: bold;
+}
+
+.chat-messages {
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.bot-message,
+.user-message {
+    width: fit-content;
+    max-width: 85%;
+    margin: 8px 0;
+    padding: 8px 11px;
+    border-radius: 5px;
+    background: #e8efe7;
+}
+
+.user-message {
+    margin-left: auto;
+    background: #426b52;
+    color: white;
+}
+
+.chat-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.dashboard-card {
+    width: 230px;
+}
+
+.dashboard-card h2 {
+    margin: 0;
+    color: #426b52;
+    font-size: 32px;
+}
+
+.dashboard-card p {
+    margin: 5px 0 0;
+    color: #657168;
+}
+
+.dashboard-info {
+    text-align: left;
+}
+
+.dashboard-info h2 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 45px;
+    padding: 18px;
+    border-top: 1px solid #dce2dc;
+    color: #657168;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .dashboard-card {
+        width: 100%;
+    }
+}

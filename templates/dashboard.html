@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareConnect | Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <a class="brand" href="/">CareConnect</a>
+
+        <nav>
+
+            <a href="/">Home</a>
+
+            <a href="/#support">Patient Support</a>
+
+            <a href="/#volunteer">Volunteer</a>
+
+            <a href="/#faq">FAQ Assistant</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard -->
+
+    <section class="dashboard">
+
+        <h1>Dashboard</h1>
+
+        <p class="dashboard-text">
+            A simple count of the requests and volunteer sign-ups received so far.
+        </p>
+
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <h2>{{ support_count }}</h2>
+
+                <p>Support Requests</p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h2>{{ volunteer_count }}</h2>
+
+                <p>Registered Volunteers</p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>CareConnect · A community healthcare support concept</p>
+
+    </footer>
+
+</body>
+
+</html>
