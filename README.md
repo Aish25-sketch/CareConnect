@@ -25,7 +25,7 @@ The SQLite database is created automatically next to `app.py`. The dashboard is 
 
 This Flask app can be deployed as a Render Web Service. Connect the GitHub repository, use `pip install -r requirements.txt` as the build command, and `gunicorn app:app` as the start command. The sample uses a local SQLite file, so check the hosting service's storage settings if you need submissions to remain after a redeploy.
 
-Live app: _Add the hosted URL after deployment._
+Live app: https://careconnect-4l59.onrender.com
 
 ## Use case and scope
 
